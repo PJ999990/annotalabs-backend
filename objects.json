@@ -1,0 +1,12 @@
+[
+    {"id": 1, "name": "Vintage Chair", "attributes": "Wooden, curved backrest, brown color, classic design"},
+    {"id": 2, "name": "Modern Stool", "attributes": "Metal frame, minimalist, grey cushion, industrial look"},
+    {"id": 3, "name": "Ceramic Vase", "attributes": "Glazed finish, round body, orange and blue patterns"},
+    {"id": 4, "name": "Glass Bottle", "attributes": "Transparent, tall neck, green tint, smooth surface"},
+    {"id": 5, "name": "Laptop", "attributes": "Silver aluminum body, 15-inch screen, backlit keyboard"},
+    {"id": 6, "name": "Smartphone", "attributes": "Black glass back, 6.1-inch display, triple camera"},
+    {"id": 7, "name": "Coffee Mug", "attributes": "White ceramic, cylindrical, heat-resistant handle"},
+    {"id": 8, "name": "Backpack", "attributes": "Nylon fabric, dark blue, multiple zippers, padded straps"},
+    {"id": 9, "name": "Desk Lamp", "attributes": "Metallic arm, adjustable neck, warm LED light"},
+    {"id": 10, "name": "Sneakers", "attributes": "White mesh upper, rubber sole, lace-up, athletic style"}
+]

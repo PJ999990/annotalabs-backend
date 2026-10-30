@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Annotalabs - HR Documents</title>
+<style>
+    /* General Styling */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background: #525659;
+        margin: 0;
+        padding: 20px;
+        color: #000;
+        line-height: 1.5;
+    }
+    
+    /* A4 Paper Simulation */
+    .page {
+        background: white;
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto 20px auto;
+        padding: 25mm 20mm;
+        box-sizing: border-box;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        position: relative;
+        page-break-after: always;
+    }
+
+    /* Header & Footer */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #0a1f44;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        font-family: Arial, sans-serif;
+    }
+    .header img {
+        height: 40px;
+    }
+    .header-address {
+        font-size: 11px;
+        color: #555;
+        text-align: right;
+    }
+    .footer {
+        position: absolute;
+        bottom: 20mm;
+        left: 20mm;
+        right: 20mm;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 10px;
+        color: #777;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Typography */
+    h1 { font-size: 24px; color: #0a1f44; margin-top: 0; font-family: Arial, sans-serif; }
+    h2 { font-size: 18px; color: #0a1f44; margin-top: 30px; font-family: Arial, sans-serif; }
+    h3 { font-size: 16px; margin-top: 20px; }
+    p { margin-bottom: 15px; text-align: justify; }
+    ul { margin-bottom: 15px; }
+    li { margin-bottom: 8px; }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-family: Arial, sans-serif; font-size: 13px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background: #f4f6f9; font-weight: bold; color: #0a1f44; }
+
+    /* Signatures */
+    .signature-block {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        font-family: Arial, sans-serif;
+    }
+    .sig-line {
+        width: 30%;
+        border-top: 1px solid #000;
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .sig-line strong { display: block; margin-bottom: 20px; }
+
+    /* Print Settings */
+    @media print {
+        body { background: white; padding: 0; }
+        .page { box-shadow: none; margin: 0; width: 100%; min-height: auto; padding: 20mm; }
+    }
+</style>
+</head>
+<body>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 1: OFFER LETTER (PAGE 1)          -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <p><strong>Date:</strong> [Date]</p>
+    <p><strong>STRICTLY PRIVATE AND CONFIDENTIAL</strong></p>
+    <p>[Applicant Name]<br>c/o [Applicant Email]</p>
+
+    <h1>RE: OFFER OF EMPLOYMENT</h1>
+
+    <p>Dear [Applicant Name],</p>
+
+    <p>We are pleased to offer you at-will continued employment in the position of <strong>Data Annotator</strong> with ANNOTALABS Inc. (the "Company") on the terms and conditions set out in this letter.</p>
+
+    <p>If you accept this offer, your employment shall commence on <strong>[Start Date]</strong> (the "Start Date"), or another date as mutually agreed upon, and continue pursuant to the attached Remote Work Agreement, which is incorporated by reference and deemed to be part of this Agreement.</p>
+
+    <p>You will report to the Team Manager (Data Operations), ANNOTALABS Inc. It is a condition of this offer that you remain eligible to work in the United States or Canada for the duration of your employment with the Company.</p>
+
+    <p>This offer is also conditioned upon your ability to provide suitable documentation verifying your identity and legal authorization to work in the United States/Canada and the Company's verification of the information contained in your employment application, if applicable.</p>
+
+    <p>Accordingly, your employment under the terms of this offer will end on the earlier of:</p>
+    <ul>
+        <li>ANNOTALABS Inc. will pay you all wages, including any accrued pay, owing to you up to and including your last day of employment (the "Termination Date");</li>
+        <li>All benefit coverage and other perquisites of your employment will cease effective upon the Termination Date; and</li>
+        <li>ANNOTALABS Inc. may terminate your employment at any time for just cause by providing you with only those wages, if any, owing under the applicable Employment Standards.</li>
+    </ul>
+
+    <h2>I. At-Will Employment</h2>
+    <p>While we look forward to a mutually beneficial employment relationship, your employment is at-will. We recognize your right to terminate the relationship at any time and for any reason, and similarly, we reserve the right to alter, modify or terminate the relationship at any time with or without cause.</p>
+
+    <h2>II. Duties and Responsibilities</h2>
+    <p>You will perform the duties of a Data Annotator as assigned by ANNOTALABS Inc. These duties include, but are not limited to:</p>
+    <ul>
+        <li>Reviewing images, videos, and text datasets to create accurate bounding boxes, polygons, and semantic segmentations.</li>
+        <li>Following detailed project guidelines to ensure 99.2% annotation accuracy.</li>
+        <li>Attending daily check-ins with your assigned Training Agent during the first 4 weeks.</li>
+        <li>Flagging ambiguous images or edge cases for QA review.</li>
+    </ul>
+
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 1</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 1: OFFER LETTER (PAGE 2)          -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h2>III. Base Pay & Hours</h2>
+    <p>You will be paid <strong>[Hourly Rate] per hour</strong> on a <strong>25-hour work week</strong>, less applicable withholdings and deductions, paid on a weekly basis on the Company's usual paydays.</p>
+    <p>If you work more than Twenty-Five (25) hours per week, you will be entitled to overtime compensation at the rate of 1.5 times your regular rate of pay.</p>
+    <p>You will work Twenty-Five (25) hours per week, as directed by your Team Manager. The role requires you to be available 5 days/week, which translates to 5 hours/day. You will work and be available during your core working hours as agreed upon with your team manager. This includes but is not limited to team meetings, collaboration, and performing the duties and responsibilities of your role.</p>
+
+    <h2>IV. Training Program</h2>
+    <p>You will undergo a comprehensive 4-week training program to familiarize yourself with our systems and processes. This training will cover the use of our annotation tools, our internal QA dashboards, and train you on our email communication best practices. During this period, you will be assigned a dedicated Training Agent who will guide you through daily and weekly workflows. Successful completion of the training program is a condition of continued employment.</p>
+
+    <h2>V. Benefits</h2>
+    <p>ANNOTALABS Inc. is committed to providing a competitive benefits package to our employees. As a Data Annotator, you may be eligible to participate in the following benefits, subject to eligibility requirements and enrollment procedures:</p>
+    <ul>
+        <li><strong>Health Insurance:</strong> We offer a health insurance plan that covers medical, dental, and vision expenses.</li>
+        <li><strong>Paid Time Off (PTO):</strong> You will accrue paid time off, including sick days and personal days, in accordance with our company policies.</li>
+        <li><strong>Remote Work Stipend:</strong> As a remote employee, you may be eligible for a weekly stipend to cover expenses related to internet connectivity.</li>
+        <li><strong>Employee Assistance Program (EAP):</strong> Our EAP provides confidential counseling and support services for work-related problems that may affect an employee's general well-being.</li>
+    </ul>
+
+    <h2>VI. Confidential Information</h2>
+    <p>"Confidential Information" means information disclosed to or known by you as a consequence of or through your employment with the Company about the Company's or any of its affiliates' products, operations, research, processes, or services. You acknowledge and agree that you shall not acquire any right, title, or interest in or to the Confidential Information. At all times during and subsequent to the termination of your employment, you will not use, copy, or reproduce the Confidential Information except as may be reasonably required for you to perform your duties.</p>
+
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 2</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 1: OFFER LETTER (PAGE 3)          -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h2>VII. Leaving the Company</h2>
+    <p>We request that you provide at least two (2) weeks of written notice when resigning your employment. This is only requested as a courtesy and does not change the at-will relationship.</p>
+
+    <h2>VIII. Severability & No Assignment</h2>
+    <p>If any provision of this Agreement is determined to be invalid or unenforceable, in whole or in part, the validity or enforceability of any other provision or parts thereof will not be affected. This Agreement is a personal services contract and, as such, you may not assign any of your duties or obligations hereunder.</p>
+
+    <h2>IX. Entire Agreement</h2>
+    <p>This letter, including the addendum to this letter, contains all of the terms and conditions of your employment and there are no promises, inducements, or provisions which are not included in this letter. The terms in this letter may be amended or modified only in writing signed by you and an authorized representative of the Company.</p>
+
+    <p>I am excited to welcome you to our Team! If you have any questions regarding the contents of this letter, please do not hesitate to contact me. Please acknowledge your acceptance of this offer by signing below and returning a copy to HR.</p>
+
+    <p>This offer is open for acceptance from today until <strong>[Offer Expiry Date]</strong>.</p>
+
+    <div class="signature-block">
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            Terry Whigham<br>
+            Hiring Manager / Talent Acquisition
+        </div>
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            [CEO Name]<br>
+            Chief Executive Officer
+        </div>
+        <div class="sig-line">
+            <strong>Accepted By:</strong><br>
+            [Applicant Name]<br>
+            Date:
+        </div>
+    </div>
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 3</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 2: REMOTE WORK AGREEMENT (PAGE 1) -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <p><strong>Date:</strong> [Date]</p>
+    <p><strong>STRICTLY PRIVATE AND CONFIDENTIAL</strong></p>
+
+    <h1>RE: REMOTE WORK AGREEMENT</h1>
+
+    <p>Dear [Applicant Name],</p>
+
+    <p>This Agreement is an addendum to your offer letter with ANNOTALABS Inc. (the "Company") and is made in accordance with the Company's Remote Workplace Program Policy. The Company authorizes you to perform your duties and responsibilities for ANNOTALABS Inc. remotely under the following terms and conditions.</p>
+
+    <h2>1. Place of Employment</h2>
+    <p>a) Under this Remote Work Agreement, the Company authorizes you to perform your duties and responsibilities for ANNOTALABS Inc. from your home in <strong>[Applicant City, State/Province]</strong> (the "Remote Work Location").</p>
+    <p>b) Should you wish to relocate from the Remote Work Location, you must inform your Team Manager as soon as possible to determine continued remote work eligibility and obtain approval. Any liability arising from any unauthorized move is your responsibility.</p>
+    <p>c) This Remote Work Agreement is tied to the role set out in this Remote Work Agreement only.</p>
+
+    <h2>2. Role & Obligation</h2>
+    <p>As a Data Annotator, you will be responsible for reviewing visual and textual data to create high-quality training datasets for AI models. You will report daily to your Team Manager on Data Operations and will carry out those duties and responsibilities reasonably assigned to you from time to time.</p>
+
+    <h2>3. Performance</h2>
+    <p>You will perform the same duties and responsibilities for the Company as outlined in your Employment Agreement from the Remote Work Location. You will meet all of the Company's business and performance standards maintaining a level of performance equal to or greater than the required accuracy threshold (99.2%).</p>
+
+    <h2>4. Work Environment</h2>
+    <p>The Company expects that you will maintain a suitable work environment that allows for uninterrupted, dedicated working time in a space where confidentiality can be maintained. Because you will be handling sensitive client data, you must ensure your screen is not visible to the public or unauthorized persons. Your work environment must include the necessary equipment and resources for you to perform your work safely.</p>
+
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 1</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 2: REMOTE WORK AGREEMENT (PAGE 2) -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h2>5. Working Hours</h2>
+    <p>Although you are working remotely, you will work and be available during your core working hours as agreed upon with your Team Manager and under the terms and conditions set out in your Employment Agreement. This includes but is not limited to team meetings, collaboration, and performing the duties and responsibilities of your role.</p>
+
+    <h2>6. Remote Work Expenses & Equipment</h2>
+    <p>Please see the Reimbursement and Work Policy Addendum attached to this document to determine your reimbursement of office equipment expenses related to this Remote Work Agreement. You are required to secure all Company-issued equipment (including the YubiKey security token) and return it upon the termination of your employment.</p>
+
+    <p>Except for the above, we confirm that all other terms and conditions of your employment are as set out in the Offer Letter. Nothing in this Agreement shall be construed as a limitation on the Employment Agreement or ANNOTALABS Inc.'s employment policies.</p>
+
+    <p>If you have any questions regarding the contents of this Agreement, please do not hesitate to contact me. Please indicate your acknowledgement and acceptance of the above Agreement by signing below.</p>
+
+    <div class="signature-block">
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            Terry Whigham<br>
+            Hiring Manager / Talent Acquisition
+        </div>
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            [CEO Name]<br>
+            Chief Executive Officer
+        </div>
+        <div class="sig-line">
+            <strong>Accepted By:</strong><br>
+            [Applicant Name]<br>
+            Date:
+        </div>
+    </div>
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 2</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 3: REIMBURSEMENT POLICY (PAGE 1)  -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h1>REIMBURSEMENT AND WORK POLICY ADDENDUM</h1>
+
+    <h2>Reimbursement Policy</h2>
+    <p>ANNOTALABS Inc. (the "Company") will provide you with an "Office Equipment Allowance" to use for services related to your remote work. The logistics arrangement will be administered by our designated Shipping Provider. The allowance amount and reimbursement policy are subject to change at the Company's sole discretion.</p>
+
+    <h2>Equipment and Supplies for Remote Work (Staged Provision)</h2>
+    <p>Materials, equipment, and supplies purchased and provided remain the property of ANNOTALABS Inc. The Company is responsible for maintaining equipment inventory and for ensuring equipment is returned at the end of the Remote work arrangement. You must ensure ANNOTALABS Inc. property is secured and that expectations for information security are met.</p>
+    
+    <p><strong>Phase 1: Onboarding & Training (Weeks 1 - 4)</strong><br>
+    During your initial 4-week training period, you will be assigned a Training Agent to guide you through our workflows. You will be provided with the following training equipment:</p>
+    <ul>
+        <li><strong>YubiKey Security Token:</strong> Required for secure 2FA login to the annotation dashboard.</li>
+        <li><strong>Training Laptop:</strong> A pre-configured laptop to access training modules and annotation software.</li>
+        <li><strong>Logitech Precision Mouse:</strong> Essential for accurate bounding box creation.</li>
+    </ul>
+
+    <p><strong>Phase 2: Full Workstation Deployment (Week 5+)</strong><br>
+    Once training is successfully completed and you transition to standard production, the Phase 1 Training Laptop must be returned using the provided shipping label. Upon receipt of the returned equipment, ANNOTALABS will ship your full production workstation:</p>
+    <ul>
+        <li><strong>Production Laptop:</strong> High-performance laptop for standard daily workloads.</li>
+        <li><strong>27" Ergonomic Monitor:</strong> To allow for pixel-perfect annotation of large images and video frames.</li>
+        <li><strong>Ergonomic Keyboard & Headset:</strong> For team communication and all-day comfort.</li>
+        <li><strong>Company Branded Desk Mat:</strong> To define your dedicated remote workspace.</li>
+    </ul>
+
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 1</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 3: REIMBURSEMENT POLICY (PAGE 2)  -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h2>Work Policy</h2>
+    <p>The employee's position is such that the employee must be regularly available as needed to respond to emails and follow up with project tasks. The role requires working <strong>25 working hours - 5 days/week, which translates to 5 hours/day</strong>. We can discuss the exact time within those parameters. Overtime is rare, but on occasion, there might be a need to cover an urgent project deadline. We will, of course, compensate you for any overtime hours worked as indicated in our offer letter.</p>
+
+    <h2>Internet Service Arrangement</h2>
+    <p>ANNOTALABS Inc. allows employees, including regular teleworking employees, to receive a <strong>weekly allowance of $25</strong> for internet connectivity. This will be included in your weekly payroll cycle and does not require a receipt submission.</p>
+
+    <h2>Equipment Agreement & Signatures</h2>
+    <p>By signing below, you acknowledge receipt of the Phase 1 equipment (YubiKey, Training Laptop, Mouse) and agree to return the Training Laptop upon the successful completion of your 4-week training and receipt of the Phase 2 equipment.</p>
+
+    <div class="signature-block">
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            Terry Whigham<br>
+            Hiring Manager / Talent Acquisition
+        </div>
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            [CEO Name]<br>
+            Chief Executive Officer
+        </div>
+        <div class="sig-line">
+            <strong>Accepted By:</strong><br>
+            [Applicant Name]<br>
+            Date:
+        </div>
+    </div>
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 2</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 4: NON-DISCLOSURE AGREEMENT       -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h1>NON-DISCLOSURE AGREEMENT (NDA)</h1>
+
+    <p>This Non-Disclosure Agreement ("Agreement") is entered into as of <strong>[Date]</strong>, by and between <strong>ANNOTALABS Inc.</strong> (the "Company") and <strong>[Applicant Name]</strong> ("Employee").</p>
+
+    <h2>1. Confidential Information</h2>
+    <p>Employee acknowledges that during the course of their employment as a Data Annotator, they will have access to and become acquainted with confidential and proprietary information. "Confidential Information" includes, but is not limited to:</p>
+    <ul>
+        <li>Client datasets, including unreleased images, video footage, audio recordings, and text data.</li>
+        <li>Annotation guidelines, QA rubrics, and proprietary labeling taxonomies.</li>
+        <li>Internal software, dashboard layouts, and API keys.</li>
+        <li>Business strategies, client lists, and financial projections.</li>
+    </ul>
+
+    <h2>2. Non-Disclosure and Non-Use</h2>
+    <p>Employee agrees to hold all Confidential Information in strict confidence. Employee shall not, directly or indirectly, disclose, publish, or reveal any Confidential Information to any third party. Furthermore, Employee shall not use the Confidential Information for any purpose other than the performance of their duties for the Company.</p>
+
+    <h2>3. Data Privacy & Security</h2>
+    <p>Because the Company handles sensitive client data, Employee agrees to follow all security protocols, including the use of the provided YubiKey, maintaining a secure private workspace, and ensuring that no client data is downloaded to unauthorized personal devices or visible to the public. Taking photographs or screenshots of client data is strictly prohibited.</p>
+
+    <h2>4. Return of Materials</h2>
+    <p>Upon the termination of employment (or at the Company's request at any time), Employee shall immediately return to the Company all documents, devices (including laptops and YubiKeys), and any other materials containing or relating to the Confidential Information.</p>
+
+    <h2>5. Remedies</h2>
+    <p>Employee acknowledges that any breach of this Agreement could cause irreparable harm to the Company for which monetary damages would be inadequate. Therefore, the Company shall be entitled to seek injunctive relief in addition to any other remedies available at law or in equity.</p>
+
+    <div class="signature-block">
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            Terry Whigham<br>
+            Hiring Manager / Talent Acquisition
+        </div>
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            [CEO Name]<br>
+            Chief Executive Officer
+        </div>
+        <div class="sig-line">
+            <strong>Accepted By:</strong><br>
+            [Applicant Name]<br>
+            Date:
+        </div>
+    </div>
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | NDA</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 5: EMPLOYEE HANDBOOK              -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h1>EMPLOYEE HANDBOOK (EXCERPT)</h1>
+
+    <h2>Welcome to Annotalabs</h2>
+    <p>Welcome to the team! We are a remote-first company dedicated to powering the next generation of AI models with high-quality, human-verified data. This handbook provides a quick overview of our expectations and policies for Data Annotators.</p>
+
+    <h2>1. Remote Work Environment</h2>
+    <p>You are responsible for maintaining a quiet, dedicated workspace free from interruptions. Because you are handling potentially sensitive data (e.g., personal images, medical records, or confidential video), your screen must be kept private. A privacy screen filter is recommended if you work in a shared space.</p>
+
+    <h2>2. Time Tracking and Availability</h2>
+    <p>Your standard work week is 25 hours. You must track your hours using our internal portal. Core working hours (when you must be online and responsive to messages) are <strong>[e.g., 9:00 AM - 3:00 PM EST]</strong>. If you need to adjust your schedule, please coordinate with your Team Manager at least 24 hours in advance.</p>
+
+    <h2>3. Communication Standards</h2>
+    <p>We rely heavily on asynchronous communication. You are expected to:</p>
+    <ul>
+        <li>Check your Slack and email at least three times during your shift.</li>
+        <li>Flag any confusing images, edge cases, or guideline contradictions to your QA Lead immediately.</li>
+        <li>Respond to direct messages from your Training Agent or Team Manager within 2 hours during core hours.</li>
+    </ul>
+
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 1</div>
+</div>
+
+<!-- ========================================== -->
+<!-- DOCUMENT 5: EMPLOYEE HANDBOOK (PAGE 2)     -->
+<!-- ========================================== -->
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h2>4. Quality Assurance (QA) Policy</h2>
+    <p>Our clients expect 99.2% accuracy. To maintain this, all annotators are subject to random QA audits. If your accuracy drops below 95%, you will be placed on a Performance Improvement Plan (PIP) which includes additional training with your assigned Agent. Repeated quality failures may result in removal from a project.</p>
+
+    <h2>5. Security & Equipment</h2>
+    <p>All client data is confidential. You must never download client datasets to your personal devices. Only use the company-provided laptop and the YubiKey for authentication. Report any lost or stolen equipment immediately to IT and HR. We take data privacy seriously; violations of the NDA will result in immediate termination.</p>
+
+    <h2>6. Paid Time Off (PTO) and Scheduling</h2>
+    <p>Because we operate as a contract workforce aligned to client deadlines, we ask that you request PTO at least 2 weeks in advance. Unapproved absences during critical project sprints may impact your contract renewal. All requests should go through your Team Manager.</p>
+
+    <h2>7. Acknowledgment</h2>
+    <p>By signing below, you acknowledge that you have read and understood the Employee Handbook, the Non-Disclosure Agreement, and the Remote Work Policies. You agree to abide by these policies during your employment with ANNOTALABS Inc.</p>
+
+    <div class="signature-block">
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            Terry Whigham<br>
+            Hiring Manager / Talent Acquisition
+        </div>
+        <div class="sig-line">
+            <strong>For ANNOTALABS Inc.</strong><br>
+            [CEO Name]<br>
+            Chief Executive Officer
+        </div>
+        <div class="sig-line">
+            <strong>Accepted By:</strong><br>
+            [Applicant Name]<br>
+            Date:
+        </div>
+    </div>
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | Page 2</div>
+</div>
+
+</body>
+</html>

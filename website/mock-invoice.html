@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Invoice - KT Electronics</title>
+<style>
+    /* General Page Styling */
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background: #525659;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+        font-size: 14px;
+    }
+    
+    /* A4 Paper Simulation */
+    .page {
+        background: white;
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 20mm;
+        box-sizing: border-box;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        position: relative;
+    }
+
+    /* Header - KT Electronics Style */
+    .header-banner {
+        background: #d32f2f; /* KT Red */
+        color: white;
+        padding: 30px;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .company-info h1 {
+        margin: 0 0 5px 0;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .company-info p {
+        margin: 3px 0;
+        font-size: 13px;
+        color: #ffcdd2;
+    }
+    .company-info .logo-sub {
+        font-size: 12px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: -2px;
+        margin-bottom: 15px;
+        display: block;
+    }
+    .invoice-title {
+        text-align: right;
+    }
+    .invoice-title h2 {
+        margin: 0 0 10px 0;
+        font-size: 36px;
+        color: rgba(255,255,255,0.3);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .invoice-title p {
+        margin: 3px 0;
+        font-size: 13px;
+    }
+
+    /* Billing Info Boxes */
+    .billing-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .billing-box {
+        width: 45%;
+    }
+    .billing-box h3 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #888;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    .billing-box p {
+        margin: 4px 0;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .highlight-box {
+        background: #ffebee; /* Light KT Red */
+        border-left: 4px solid #d32f2f; /* Solid KT Red */
+        padding: 15px;
+        border-radius: 4px;
+    }
+    .highlight-box strong {
+        color: #d32f2f;
+    }
+
+    /* Items Table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+    th {
+        background: #ffebee;
+        border-bottom: 2px solid #d32f2f;
+        padding: 12px;
+        text-align: left;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #b71c1c;
+    }
+    td {
+        border-bottom: 1px solid #eee;
+        padding: 15px 12px;
+        font-size: 13px;
+    }
+    .item-desc strong {
+        display: block;
+        margin-bottom: 4px;
+        color: #000;
+    }
+    .item-desc span {
+        color: #666;
+        font-size: 11px;
+    }
+    .text-right { text-align: right; }
+    .text-center { text-align: center; }
+
+    /* Totals */
+    .totals-row {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .totals-table {
+        width: 50%;
+    }
+    .totals-table td {
+        border: none;
+        padding: 8px 12px;
+    }
+    .totals-table tr.grand-total td {
+        border-top: 2px solid #d32f2f;
+        border-bottom: 2px solid #d32f2f;
+        font-weight: bold;
+        font-size: 16px;
+        color: #d32f2f;
+        padding: 15px 12px;
+    }
+
+    /* Footer / Terms */
+    .terms {
+        margin-top: 40px;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+    }
+    .terms h3 {
+        font-size: 13px;
+        color: #d32f2f;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .terms p {
+        font-size: 12px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    /* Stamp */
+    .stamp {
+        position: absolute;
+        bottom: 25mm;
+        right: 20mm;
+        border: 3px solid #d32f2f;
+        color: #d32f2f;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transform: rotate(-5deg);
+        opacity: 0.8;
+        letter-spacing: 2px;
+    }
+</style>
+</head>
+<body>
+
+<div class="page">
+    <!-- HEADER -->
+    <div class="header-banner">
+        <div class="company-info">
+            <h1>KT</h1>
+            <span class="logo-sub">Electronics</span>
+            <p>1191 E. Santa Clara, San Jose, CA 95116</p>
+            <p>klectronicrepair@gmail.com</p>
+        </div>
+        <div class="invoice-title">
+            <h2>INVOICE</h2>
+            <p><strong>Invoice #:</strong> KT-2026-8842</p>
+            <p><strong>Date:</strong> [Current Date]</p>
+            <p><strong>Due Date:</strong> Upon Receipt</p>
+        </div>
+    </div>
+
+    <!-- BILLING INFO -->
+    <div class="billing-row">
+        <div class="billing-box">
+            <h3>Bill To (Payer)</h3>
+            <p><strong>ANNOTALABS Inc.</strong></p>
+            <p>Attn: Accounts Payable</p>
+            <p>Remote Operations Center</p>
+            <p>USA & Canada Operations</p>
+        </div>
+        
+        <!-- Assigned Applicant Info -->
+        <div class="billing-box highlight-box">
+            <h3>Ship To / Assigned Applicant</h3>
+            <p><strong>[Applicant Name]</strong></p>
+            <p>123 Main St</p>
+            <p>Los Angeles, CA 90001</p>
+            <p style="margin-top: 8px; font-size: 11px; color: #d32f2f;"><strong>Note:</strong> Equipment pre-configured for Data Annotation role.</p>
+        </div>
+    </div>
+
+    <!-- ITEMS TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th>Item Description</th>
+                <th class="text-center">Qty</th>
+                <th class="text-right">Unit Price</th>
+                <th class="text-right">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="item-desc">
+                    <strong>ASUS ROG Zephyrus G16 Gaming Laptop</strong>
+                    <span>Intel Core i9, 32GB RAM, 1TB SSD, NVIDIA RTX 4070 GPU</span>
+                    <span>(Pre-installed with Annotalabs Software Stack)</span>
+                </td>
+                <td class="text-center">1</td>
+                <td class="text-right">$1,899.99</td>
+                <td class="text-right">$1,899.99</td>
+            </tr>
+            <tr>
+                <td class="item-desc">
+                    <strong>Logitech MX Master 3S Precision Mouse</strong>
+                    <span>Ergonomic, 8K DPI, Quiet Clicks (Graphite)</span>
+                </td>
+                <td class="text-center">1</td>
+                <td class="text-right">$99.99</td>
+                <td class="text-right">$99.99</td>
+            </tr>
+            <tr>
+                <td class="item-desc">
+                    <strong>YubiKey 5C NFC Security Key</strong>
+                    <span>Hardware Authentication Token (Digital Keycard)</span>
+                </td>
+                <td class="text-center">1</td>
+                <td class="text-right">$55.00</td>
+                <td class="text-right">$55.00</td>
+            </tr>
+            <tr>
+                <td class="item-desc">
+                    <strong>Shipping & Secure Handling</strong>
+                    <span>Express Courier Delivery</span>
+                </td>
+                <td class="text-center">1</td>
+                <td class="text-right">$45.00</td>
+                <td class="text-right">$45.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TOTALS -->
+    <div class="totals-row">
+        <table class="totals-table">
+            <tr>
+                <td>Subtotal:</td>
+                <td class="text-right">$2,099.98</td>
+            </tr>
+            <tr>
+                <td>Tax (0% - Out of State):</td>
+                <td class="text-right">$0.00</td>
+            </tr>
+            <tr class="grand-total">
+                <td>Total Due:</td>
+                <td class="text-right">$2,099.98</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- PAYMENT INSTRUCTIONS -->
+    <div class="terms">
+        <h3>Payment Instructions</h3>
+        <p>This invoice is due upon items being sent out from our facility. Please reach out to our shipping personnel about acceptable payment methods. Upon receiving the items, please check for broken seals or damage to any of the shipped products.</p>
+        <p><strong>Please reference Invoice #KT-2026-8842 on all correspondence.</strong></p>
+    </div>
+
+    <!-- STAMP -->
+    <div class="stamp">Paid Via Electronic Transfers</div>
+</div>
+
+</body>
+</html>

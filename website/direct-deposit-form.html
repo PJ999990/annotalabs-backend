@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Direct Deposit Form - Annotalabs</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #525659;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+    .page {
+        background: white;
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 20mm;
+        box-sizing: border-box;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        position: relative;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #0a1f44;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    .header img { height: 40px; }
+    .header-address { font-size: 11px; color: #555; text-align: right; }
+    
+    h1 { font-size: 22px; color: #0a1f44; text-align: center; margin-bottom: 30px; }
+    p { font-size: 14px; line-height: 1.6; margin-bottom: 15px; }
+    
+    .form-section { margin-bottom: 30px; }
+    .form-section h3 { font-size: 16px; color: #0a1f44; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; }
+    
+    .row { display: flex; gap: 20px; margin-bottom: 15px; }
+    .field { flex: 1; }
+    .field label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 5px; color: #555; }
+    .field input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    .field input[type="checkbox"] { width: auto; margin-right: 10px; }
+    
+    .radio-group { display: flex; gap: 20px; margin-top: 10px; }
+    .radio-group label { font-size: 14px; display: flex; align-items: center; cursor: pointer; font-weight: normal; }
+    
+    .signature-block { display: flex; justify-content: space-between; margin-top: 60px; }
+    .sig-line { width: 45%; border-top: 1px solid #000; padding-top: 5px; font-size: 12px; }
+    .sig-line strong { display: block; margin-bottom: 30px; }
+    
+    .footer {
+        position: absolute;
+        bottom: 20mm;
+        left: 20mm;
+        right: 20mm;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 10px;
+        color: #777;
+    }
+    @media print {
+        body { background: white; padding: 0; }
+        .page { box-shadow: none; margin: 0; width: 100%; min-height: auto; padding: 20mm; }
+    }
+</style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <img src="logos/icon.png" alt="Annotalabs">
+        <div class="header-address">
+            <strong>ANNOTALABS Inc.</strong><br>
+            Remote-First Company<br>
+            USA & Canada Operations
+        </div>
+    </div>
+
+    <h1>DIRECT DEPOSIT AUTHORIZATION FORM</h1>
+    
+    <p>Please complete this form to authorize ANNOTALABS Inc. to deposit your payroll directly into your bank account. Please attach a voided check or a bank letter to this form upon completion.</p>
+
+    <div class="form-section">
+        <h3>Employee Information</h3>
+        <div class="row">
+            <div class="field"><label>Full Legal Name</label><input type="text" placeholder="First, Middle Initial, Last"></div>
+            <div class="field"><label>Employee ID</label><input type="text" placeholder="(For HR Use Only)" disabled></div>
+        </div>
+        <div class="row">
+            <div class="field"><label>Job Title</label><input type="text" value="Data Annotator" readonly></div>
+            <div class="field"><label>Date</label><input type="date"></div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Bank Account Information</h3>
+        <div class="field" style="margin-bottom: 15px;">
+            <label>Financial Institution Name</label>
+            <input type="text" placeholder="e.g., Chase, Bank of America">
+        </div>
+        <div class="row">
+            <div class="field"><label>Routing Number (9 digits)</label><input type="text" placeholder="XXXXXXXXX" maxlength="9"></div>
+            <div class="field"><label>Account Number</label><input type="text" placeholder="XXXXXXXXXXXXXXXX"></div>
+        </div>
+        <div class="field">
+            <label>Account Type</label>
+            <div class="radio-group">
+                <label><input type="radio" name="account_type" value="checking"> Checking</label>
+                <label><input type="radio" name="account_type" value="savings"> Savings</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Authorization</h3>
+        <p style="font-size: 12px; color: #555;">I hereby authorize ANNOTALABS Inc. to initiate electronic credit entries, and if necessary, debit entries and adjustments for any credit entries in error, to my account at the financial institution indicated above. This authorization will remain in full force and effect until I notify ANNOTALABS Inc. in writing to cancel it in such time as to afford the company and the financial institution a reasonable opportunity to act on it.</p>
+    </div>
+
+    <div class="signature-block">
+        <div class="sig-line">
+            <strong>Employee Signature:</strong>
+        </div>
+        <div class="sig-line">
+            <strong>Date:</strong>
+        </div>
+    </div>
+
+    <div class="footer">CONFIDENTIAL - ANNOTALABS INC. | DIRECT DEPOSIT FORM</div>
+</div>
+
+</body>
+</html>

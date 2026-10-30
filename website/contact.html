@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Annotalabs</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">
+            <img src="logos/icon.png" alt="Annotalabs" />
+            <div class="logo-block">
+                <span class="logo-text">Annota<span class="labs">labs</span></span>
+                <span class="logo-tagline">Human-powered data annotation for AI</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html" class="nav-cta active">Get a Quote</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO (Royal Blue Split) -->
+<div class="hero-wrapper">
+    <div class="service-hero-split" style="min-height: 600px;">
+        <div class="service-hero-text">
+            <h1 style="font-size: 3.2rem; line-height: 1.1;">Get Your<br>Quote Today</h1>
+            <p style="font-size: 1.1rem; max-width: 400px;">Request a customized quote today for secure, scalable, and accurate data annotation services tailored to your unique AI project requirements.</p>
+            <div>
+                <!-- Optional: Add a button here if you want it to match other pages perfectly, otherwise leave as is -->
+            </div>
+        </div>
+        <div class="service-hero-img">
+            <img src="images/contact-hero.jpg" alt="Contact Us" style="height: 100%; object-fit: cover;" />
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <div class="contact-grid">
+        
+        <!-- LEFT: Info & Cards -->
+        <div class="contact-info">
+            <span class="eyebrow" style="color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">/ Get In Touch with Us /</span>
+            <h2>Connect with an <span>Expert</span></h2>
+            <p>Annotalabs provides high-quality data annotation services, delivering secure, scalable, and accurate AI training datasets. Have questions or a project in mind? Our team is here to help—reach out today.</p>
+            
+            <div class="contact-card-item">
+                <div class="contact-card-icon">🇺🇸</div>
+                <div class="contact-card-text">
+                    <h3>USA</h3>
+                    <p>3150 Holcomb Bridge, Suite 300, 3rd Floor<br>Norcross, GA 30071</p>
+                </div>
+            </div>
+
+            <div class="contact-card-item">
+                <div class="contact-card-icon">🇨🇦</div>
+                <div class="contact-card-text">
+                    <h3>CANADA</h3>
+                    <p>123 Bay Street, Suite 400<br>Toronto, ON M5H 2Y2</p>
+                </div>
+            </div>
+
+            <div class="contact-card-item">
+                <div class="contact-card-icon">✉️</div>
+                <div class="contact-card-text">
+                    <h3>Email</h3>
+                    <p>hello@annotalabs.com</p>
+                </div>
+            </div>
+
+            <div class="contact-card-item">
+                <div class="contact-card-icon">📞</div>
+                <div class="contact-card-text">
+                    <h3>Phone No</h3>
+                    <p>+1 (855) 200-9175</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: The Form -->
+        <div class="expert-form" style="margin: 0;">
+            <div class="form-row">
+                <input type="text" placeholder="Full Name *">
+                <input type="text" placeholder="Title / Designation *">
+            </div>
+            <div class="form-row">
+                <input type="text" placeholder="Company *">
+                <input type="email" placeholder="Business Email *">
+            </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Phone *">
+                <input type="url" placeholder="Website">
+            </div>
+            <div class="form-row">
+                <select><option>Industry *</option><option>Healthcare</option><option>Automotive</option><option>Retail</option><option>Finance</option></select>
+                <select><option>Area of Interest *</option><option>Image Annotation</option><option>Video Annotation</option><option>Text Annotation</option><option>Audio Annotation</option><option>3D / LiDAR</option><option>LLM & GenAI</option></select>
+            </div>
+            <div class="form-row">
+                <select><option>Preferred Location *</option><option>USA</option><option>Canada</option><option>Remote</option></select>
+                <input type="text" placeholder="Requirement *">
+            </div>
+            <textarea placeholder="Detailed Requirement *"></textarea>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-alt); padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 0.85rem; border: 1px solid var(--border);">
+                <span>Attach RfX Document<br><small style="color: #888;">(*.docx, .pdf, .zip only)</small></span>
+                <input type="file" style="width: auto; padding: 0; background: none; border: none;">
+            </div>
+            
+            <button class="form-submit">Submit Now</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="logos/icon.png" alt="Annotalabs" style="height: 40px;" />
+                    <div class="logo-block">
+                        <span class="logo-text" style="font-size: 1.3rem;">Annota<span class="labs">labs</span></span>
+                    </div>
+                </div>
+                <p class="footer-desc">High-quality human data annotation for AI teams. From image labeling to LLM evaluation.</p>
+            </div>
+            <div class="footer-col"><h5>Services</h5><ul>
+                <li><a href="service-image.html">Image Annotation</a></li>
+                <li><a href="service-video.html">Video Annotation</a></li>
+                <li><a href="service-text.html">Text Annotation</a></li>
+                <li><a href="service-audio.html">Audio Annotation</a></li>
+                <li><a href="service-3d.html">3D / LiDAR</a></li>
+                <li><a href="service-llm.html">LLM & GenAI</a></li>
+            </ul></div>
+            <div class="footer-col"><h5>Company</h5><ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul></div>
+            <div class="footer-col"><h5>Contact</h5><ul>
+                <li>hello@annotalabs.com</li>
+                <li>+1 (555) 000-0000</li>
+                <li>Remote · USA & Canada</li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Annotalabs. All rights reserved.</span>
+            <span>Privacy Policy · Terms of Service</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

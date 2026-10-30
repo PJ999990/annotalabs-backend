@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annotalabs — AI Data Annotation & Labeling Services</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">
+            <img src="logos/icon.png" alt="Annotalabs" />
+            <div class="logo-block">
+                <span class="logo-text">Annota<span class="labs">labs</span></span>
+                <span class="logo-tagline">Human-powered data annotation for AI</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html" class="nav-cta">Get a Quote</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-card">
+            <div class="hero-content">
+                <span class="hero-badge">● Trusted by AI teams worldwide</span>
+                <h1>Human-powered <span class="accent">data annotation</span> for AI that works.</h1>
+                <p>From image labeling to 3D point clouds — we deliver high-quality, human-verified training data at scale, with the accuracy your models deserve.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Request a Quote →</a>
+                    <a href="services.html" class="btn btn-ghost">Explore Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.png" alt="Data annotation" />
+                <div class="hero-image-badge">
+                    <div class="badge-value">99.2%</div>
+                    <div class="badge-label">QA Accuracy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar">
+    <div class="container stats-grid">
+        <div><div class="stat-value">99.2%</div><div class="stat-label">Accuracy Rate</div></div>
+        <div><div class="stat-value">500+</div><div class="stat-label">Vetted Annotators</div></div>
+        <div><div class="stat-value">12M+</div><div class="stat-label">Items Labeled</div></div>
+        <div><div class="stat-value">48h</div><div class="stat-label">Avg Turnaround</div></div>
+    </div>
+</section>
+
+<!-- 1. ABOUT / WHY US -->
+<section class="container">
+    <div class="split-section">
+        <div class="split-image">
+            <img src="images/about-tech.jpg" alt="AI Technology" />
+        </div>
+        <div class="split-content">
+            <span class="eyebrow">/ About Annotalabs /</span>
+            <h2>Three things most annotation vendors get wrong.</h2>
+            <p>The annotation industry is full of vendors who promise quality and deliver inconsistency. Here's what we do differently — and why AI teams from autonomous vehicles to LLM fine-tuning teams choose us after trying the alternatives.</p>
+            <p>Every Annotalabs project runs through a three-layer quality framework — annotator-level review, team lead spot-checks, and independent QA validation — delivering 99%+ accuracy across image, video, audio, and text datasets.</p>
+            <a href="about.html" class="btn btn-primary" style="margin-top: 10px;">Explore More →</a>
+        </div>
+    </div>
+</section>
+
+<!-- 2. MODALITIES (SERVICES) -->
+<section class="container" style="padding-bottom: 80px;">
+    <div class="section-header" style="text-align: left; max-width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px;">
+        <div>
+            <span class="eyebrow" style="color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">/ Services /</span>
+            <h2 style="font-size: 2.5rem; color: var(--navy); margin-top: 10px; letter-spacing: -1px;">Annotation across every modality<br>your model needs.</h2>
+        </div>
+        <p style="max-width: 400px; color: var(--text-muted); font-size: 0.95rem;">Annotalabs provides end-to-end annotation services, from bounding boxes to RLHF preference pairs. We cover the full stack of annotation techniques for production AI development.</p>
+    </div>
+    
+        <div class="modality-grid">
+        <a href="service-text.html" class="modality-card">
+            <div class="modality-icon">📝</div>
+            <h3>Text Annotation</h3>
+            <p>Entity recognition, sentiment, intent classification, and semantic annotation for NLP models and LLM training datasets.</p>
+        </a>
+        <a href="service-image.html" class="modality-card">
+            <div class="modality-icon">🖼️</div>
+            <h3>Image Annotation</h3>
+            <p>Bounding boxes, polygons, semantic segmentation, and keypoint labeling for computer vision in autonomous systems and security.</p>
+        </a>
+        <a href="service-audio.html" class="modality-card">
+            <div class="modality-icon">🔊</div>
+            <h3>Audio Annotation</h3>
+            <p>Speech transcription, speaker ID, sentiment, event tagging. Multilingual annotation across 28+ languages and dialects.</p>
+        </a>
+        <a href="service-video.html" class="modality-card">
+            <div class="modality-icon">🎥</div>
+            <h3>Video Annotation</h3>
+            <p>Frame-by-frame labeling, multi-object tracking, event detection for autonomous vehicles, surveillance, and visual analytics.</p>
+        </a>
+    </div>
+    </div>
+</section>
+
+<!-- 3. INDUSTRIES -->
+<section class="section-alt" style="padding: 100px 0;">
+    <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px;">
+            <h2 style="font-size: 2.5rem; color: var(--navy); max-width: 500px; letter-spacing: -1px;">Domain-trained teams for the use cases that matter.</h2>
+            <p style="max-width: 400px; color: var(--text-muted); font-size: 0.95rem;">Annotation isn't generic. Each industry has its own taxonomy, edge cases, and quality bar. Our annotators are trained on the domain — not just the tool.</p>
+        </div>
+
+        <div class="industry-grid">
+            <div class="industry-card">
+                <img src="images/ind-security.jpg" alt="Security">
+                <div class="industry-content"><h3>Security & Surveillance</h3><p>Object detection, behavior recognition, and threat classification.</p></div>
+            </div>
+            <div class="industry-card">
+                <img src="images/ind-auto.jpg" alt="Autonomous">
+                <div class="industry-content"><h3>Autonomous Vehicle</h3><p>LiDAR cuboid annotation, multi-sensor fusion, pedestrian and lane detection.</p></div>
+            </div>
+            <div class="industry-card">
+                <img src="images/ind-retail.jpg" alt="Retail">
+                <div class="industry-content"><h3>Retail</h3><p>Product categorization, attribute extraction, visual search datasets.</p></div>
+            </div>
+            <div class="industry-card">
+                <img src="images/ind-robotics.jpg" alt="Robotics">
+                <div class="industry-content"><h3>Robotics</h3><p>Manipulation datasets, scene understanding, pose estimation.</p></div>
+            </div>
+            <div class="industry-card">
+                <img src="images/ind-health.jpg" alt="Healthcare">
+                <div class="industry-content"><h3>Healthcare</h3><p>HIPAA-compliant annotation of medical imaging, clinical NLP, drug discovery.</p></div>
+            </div>
+            <div class="industry-card">
+                <img src="images/ind-finance.jpg" alt="Finance">
+                <div class="industry-content"><h3>Financial Services</h3><p>Document annotation, transaction classification, sentiment labeling.</p></div>
+            </div>
+            <div class="industry-card">
+                <img src="images/ind-legal.jpg" alt="Legal">
+                <div class="industry-content"><h3>Legal</h3><p>Contract clause extraction, legal entity recognition, e-discovery datasets.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. HOW WE WORK -->
+<div class="container">
+    <div class="process-section">
+        <div class="process-image">
+            <img src="images/process-ai.jpg" alt="AI Process">
+        </div>
+        <div class="process-content">
+            <span class="eyebrow" style="color: #aaa;">/ How We Work /</span>
+            <h2>A Proven Approach to Scalable Data Annotation Projects</h2>
+            <p>Annotalabs's streamlined annotation workflows combine advanced tools, secure infrastructure, and skilled human annotators to deliver high-quality AI training datasets.</p>
+            
+            <details open>
+                <summary>Consult & Define</summary>
+                <p>We begin by thoroughly understanding your goals and data needs. Then, we collaboratively define clear annotation guidelines to ensure consistency and accuracy in every outcome.</p>
+            </details>
+            <details>
+                <summary>Annotate & Review</summary>
+                <p>Your data is processed by our domain-trained teams. Every batch passes through multi-layer QA to ensure it meets your accuracy threshold before delivery.</p>
+            </details>
+            <details>
+                <summary>Deliver & Scale</summary>
+                <p>Receive your production-ready datasets in any format you need. As your model evolves, our workforce scales with you.</p>
+            </details>
+        </div>
+    </div>
+</div>
+
+<!-- 5. TESTIMONIALS -->
+<section class="testimonial-section">
+    <div class="container">
+        <div class="testimonial-header" style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <div>
+                <span class="eyebrow" style="color: #aaa;">/ Client Testimonials /</span>
+                <h2>What AI and ML Teams Say About<br>Working with Annotalabs</h2>
+            </div>
+            <p style="color: #a0a0a0; max-width: 400px; font-size: 0.95rem;">Real results from data science and engineering teams that rely on Annotalabs for accurate, scalable annotation across text, image, audio, and video.</p>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p>We processed over 2 million product images for our computer vision pipeline. Annotalabs's polygon annotation team delivered 99.2% accuracy on the first QA pass, faster than any vendor we'd worked with before.</p>
+                <div class="testimonial-author">ML Engineering Lead</div>
+                <div class="testimonial-role">Head of AI Infrastructure</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px;">Enterprise SaaS Platform</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p>We needed multilingual audio annotation for eight languages under a tight deadline. Annotalabs's team had a working pilot in 48 hours and scaled to full production within two weeks. The QA process was rigorous, and the delivery was clean.</p>
+                <div class="testimonial-author">Senior Data Scientist</div>
+                <div class="testimonial-role">NLP Team</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px;">Retail Technology Company</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p>Our autonomous vehicle team had tried three annotation vendors before Annotalabs. The difference was the human-in-the-loop review layer — edge cases that other vendors flagged as acceptable failures were caught and corrected before they reached our model.</p>
+                <div class="testimonial-author">Computer Vision Engineer</div>
+                <div class="testimonial-role">Perception Systems Team</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px;">Autonomous Vehicle Company</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <details open>
+        <summary>What is Annotalabs?</summary>
+        <p>Annotalabs is a data annotation company specializing in production-grade training data for artificial intelligence and machine learning models. We transform raw data into structured, labeled datasets across text, image, audio, video, and generative AI modalities.</p>
+    </details>
+    <details>
+        <summary>What services does Annotalabs provide?</summary>
+        <p>We provide image annotation, video tracking, text classification, audio transcription, 3D point cloud labeling, and RLHF preference ranking.</p>
+    </details>
+    <details>
+        <summary>Why should companies outsource data annotation to Annotalabs?</summary>
+        <p>Because we combine a dedicated workforce with a strict multi-layer QA framework. We don't use crowdsourcing; we use domain-trained specialists who learn your specific guidelines.</p>
+    </details>
+    <details>
+        <summary>How does Annotalabs ensure annotation quality?</summary>
+        <p>Every dataset passes through three layers: annotator self-review, peer review, and senior QA spot-checks. We maintain a 99.2% accuracy standard.</p>
+    </details>
+</section>
+
+<!-- 7. BLOG & CTA -->
+<section class="container">
+    <div class="blog-header">
+        <div>
+            <span class="eyebrow" style="color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">/ Our Blogs /</span>
+            <h2>Insights from the<br>World of Data Annotation</h2>
+        </div>
+        <a href="blog.html" class="btn btn-primary" style="padding: 12px 30px; font-size: 0.9rem;">More Blogs →</a>
+    </div>
+
+    <div class="blog-grid">
+        <!-- Card 1: Links to the new article -->
+        <a href="blog-video-moderation.html" class="blog-card">
+            <img src="images/blog-1.jpg" alt="Blog 1">
+            <div class="blog-content">
+                <span class="blog-date">October 19, 2026</span>
+                <h3>Video Content Moderation Annotation: Labeling Violence, NSFW, and Brand-Safety Risks in UGC and Live Streams</h3>
+            </div>
+        </a>
+        
+        <!-- Card 2 -->
+        <a href="blog-driver-monitoring.html" class="blog-card">
+            <img src="images/blog-2.jpg" alt="Blog 2">
+            <div class="blog-content">
+                <span class="blog-date">October 16, 2026</span>
+                <h3>In-Cabin Video Annotation for Driver Monitoring Systems: Drowsiness, Distraction, and Gaze</h3>
+            </div>
+        </a>
+        
+        <!-- Card 3 -->
+        <a href="blog-robot-learning.html" class="blog-card">
+            <img src="images/blog-3.jpg" alt="Blog 3">
+            <div class="blog-content">
+                <span class="blog-date">October 15, 2026</span>
+                <h3>Hand-Object Interaction Annotation in Egocentric Video for Robot Learning</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="cta-footer">
+        <div>
+            <h2>Ready to see what dedicated annotation delivers?</h2>
+            <p>Partner with Annotalabs for accurate, affordable, and scalable data annotation. Trust us with an annotation pilot and experience the difference.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Explore More →</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="logos/icon.png" alt="Annotalabs" style="height: 40px;" />
+                    <div class="logo-block">
+                        <span class="logo-text" style="font-size: 1.3rem;">Annota<span class="labs">labs</span></span>
+                    </div>
+                </div>
+                <p class="footer-desc">High-quality human data annotation for AI teams. From image labeling to LLM evaluation.</p>
+            </div>
+            <div class="footer-col"><h5>Services</h5><ul>
+                <li><a href="services.html">Image Annotation</a></li>
+                <li><a href="services.html">Video Annotation</a></li>
+                <li><a href="services.html">Text Annotation</a></li>
+                <li><a href="services.html">Audio Annotation</a></li>
+                <li><a href="services.html">3D / LiDAR</a></li>
+            </ul></div>
+            <div class="footer-col"><h5>Company</h5><ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul></div>
+            <div class="footer-col"><h5>Contact</h5><ul>
+                <li>hello@annotalabs.com</li>
+                <li>+1 (555) 000-0000</li>
+                <li>Remote · Worldwide</li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Annotalabs. All rights reserved.</span>
+            <span>Privacy Policy · Terms of Service</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

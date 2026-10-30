@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — Annotalabs</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">
+            <img src="logos/icon.png" alt="Annotalabs" />
+            <div class="logo-block">
+                <span class="logo-text">Annota<span class="labs">labs</span></span>
+                <span class="logo-tagline">Human-powered data annotation for AI</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="how-it-works.html" class="active">How It Works</a>
+            <a href="about.html">About</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html" class="nav-cta">Get a Quote</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero-wrapper">
+    <div class="service-hero-split" style="min-height: 600px;">  <!-- Changed from 500px to 600px -->
+        <div class="service-hero-text">
+            <span class="hero-badge" style="align-self: flex-start; margin-bottom: 20px;">● The Process</span>
+            <h1 style="font-size: 3rem; line-height: 1.1;">A Transparent Multi-Stage Workflow</h1>
+            <p style="font-size: 1.1rem;">We guarantee quality at every step. No black boxes, no hidden processes—just a streamlined path from raw data to production-ready datasets.</p>
+            <div>
+                <a href="contact.html" class="btn btn-primary">Start Your Project →</a>
+            </div>
+        </div>
+        <div class="service-hero-img">
+            <img src="images/process-hero.png" alt="Workflow Process" style="height: 100%; object-fit: cover;" />
+        </div>
+    </div>
+</div>
+<!-- INTRO -->
+<section class="intro-section">
+    <h2>From Raw Data to <span>AI-Ready Datasets</span></h2>
+    <p>Our methodology blends technology, skilled annotators, and secure workflows, ensuring every dataset is accurate, enterprise-ready, and tailored for industry-specific AI applications.</p>
+</section>
+
+<!-- TIMELINE STEPS -->
+<div class="process-timeline">
+    
+    <!-- Step 1 -->
+    <div class="timeline-step">
+        <div class="step-image">
+            <img src="images/step-1.png" alt="Consultation">
+        </div>
+        <div class="step-content">
+            <div class="step-badge">Step 1</div>
+            <h3>Consult & Define</h3>
+            <p>We begin by thoroughly understanding your goals, data requirements, and model architecture. Then, we collaboratively define clear annotation guidelines to ensure consistency and accuracy in every outcome.</p>
+            <ul>
+                <li>Kickoff call to align on project scope</li>
+                <li>Custom taxonomy & guideline creation</li>
+                <li>Secure data transfer setup (S3, SFTP, API)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="timeline-step reverse">
+        <div class="step-image">
+            <img src="images/step-2.png" alt="Annotation">
+        </div>
+        <div class="step-content">
+            <div class="step-badge">Step 2</div>
+            <h3>Annotate & Review</h3>
+            <p>Your data is processed by our domain-trained teams. We start with a pilot batch for your approval, then scale to full production. Every label is applied with multi-stage quality checks.</p>
+            <ul>
+                <li>Pilot batch delivery within 48 hours</li>
+                <li>Dedicated annotator teams assigned to your project</li>
+                <li>Continuous feedback loops and guideline refinements</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="timeline-step">
+        <div class="step-image">
+            <img src="images/step-3.png" alt="Quality Assurance">
+        </div>
+        <div class="step-content">
+            <div class="step-badge">Step 3</div>
+            <h3>Multi-Layer Quality Assurance</h3>
+            <p>Before a single label is delivered to you, it passes through our rigorous three-layer QA framework designed to catch edge cases, inconsistencies, and errors.</p>
+            <ul>
+                <li>Annotator self-review and peer review</li>
+                <li>Senior QA manager spot-checks</li>
+                <li>Automated schema and boundary validations</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="timeline-step reverse">
+        <div class="step-image">
+            <img src="images/step-4.png" alt="Delivery">
+        </div>
+        <div class="step-content">
+            <div class="step-badge">Step 4</div>
+            <h3>Deliver & Scale</h3>
+            <p>Receive your production-ready datasets in any format you need (COCO, YOLO, JSON, CSV). As your model evolves and your data requirements grow, our workforce scales with you.</p>
+            <ul>
+                <li>Delivery via secure cloud or API</li>
+                <li>Flexible formatting to match your ML pipeline</li>
+                <li>Ongoing support for continuous model training</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- QA SECTION -->
+<section class="qa-section">
+    <div class="container">
+        <div class="section-header" style="text-align: center; max-width: 700px; margin: 0 auto 20px;">
+            <span class="eyebrow" style="color: var(--cyan);">/ Quality Assurance /</span>
+            <h2 style="color: white; font-size: 2.5rem;">Why our accuracy is 99.2%</h2>
+            <p style="color: #cbd5e1; font-size: 1.1rem; margin-top: 15px;">We don't rely on automated checks alone. Every dataset is human-verified to ensure your models train on the highest quality data possible.</p>
+        </div>
+
+        <div class="qa-grid">
+            <div class="qa-card">
+                <div class="qa-icon">🔍</div>
+                <h4>Dual-Pass Review</h4>
+                <p>Every task is annotated by one worker and verified by another. Disagreements trigger a senior review.</p>
+            </div>
+            <div class="qa-card">
+                <div class="qa-icon">📊</div>
+                <h4>Agreement Scoring</h4>
+                <p>We track inter-annotator agreement. If it drops below target, we retrain the team immediately.</p>
+            </div>
+            <div class="qa-card">
+                <div class="qa-icon">⚙️</div>
+                <h4>Automated Checks</h4>
+                <p>Schema validation and rule-based checks catch obvious errors before human review even begins.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG PREVIEW & CTA -->
+<div class="container">
+    <div class="section-header" style="text-align: left; max-width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px;">
+        <div>
+            <span class="eyebrow" style="color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">/ Our Blogs /</span>
+            <h2 style="font-size: 2.2rem; color: var(--navy); margin-top: 10px; letter-spacing: -1px;">Insights from the<br>World of Data Annotation</h2>
+        </div>
+        <a href="blog.html" class="btn btn-primary" style="padding: 12px 30px; font-size: 0.9rem;">More Blogs →</a>
+    </div>
+
+    <div class="blog-preview-grid">
+        <a href="blog-video-moderation.html" class="blog-preview-card">
+            <img src="images/blog-1.jpg" alt="Blog 1" style="background:#ddd;">
+            <div class="blog-preview-content">
+                <span class="blog-preview-date">October 19, 2026</span>
+                <h3>Video Content Moderation Annotation: Labeling Violence, NSFW, and Brand-Safety Risks in UGC and Live Streams</h3>
+            </div>
+        </a>
+
+        <a href="blog-driver-monitoring.html" class="blog-preview-card">
+            <img src="images/blog-2.jpg" alt="Blog 2" style="background:#ddd;">
+            <div class="blog-preview-content">
+                <span class="blog-preview-date">October 16, 2026</span>
+                <h3>In-Cabin Video Annotation for Driver Monitoring Systems: Drowsiness, Distraction, and Gaze</h3>
+            </div>
+        </a>
+
+        <a href="blog-robot-learning.html" class="blog-preview-card">
+            <img src="images/blog-3.jpg" alt="Blog 3" style="background:#ddd;">
+            <div class="blog-preview-content">
+                <span class="blog-preview-date">October 15, 2026</span>
+                <h3>Hand-Object Interaction Annotation in Egocentric Video for Robot Learning</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="cta-footer">
+        <div>
+            <h2>Ready to start your first batch?</h2>
+            <p>We'll run a free pilot on 500 items so you can see the quality before committing to a full project.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Request Free Pilot →</a>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <img src="logos/icon.png" alt="Annotalabs" style="height: 40px;" />
+                    <div class="logo-block">
+                        <span class="logo-text" style="font-size: 1.3rem;">Annota<span class="labs">labs</span></span>
+                    </div>
+                </div>
+                <p class="footer-desc">High-quality human data annotation for AI teams. From image labeling to LLM evaluation.</p>
+            </div>
+            <div class="footer-col"><h5>Services</h5><ul>
+                <li><a href="service-image.html">Image Annotation</a></li>
+                <li><a href="service-video.html">Video Annotation</a></li>
+                <li><a href="service-text.html">Text Annotation</a></li>
+                <li><a href="service-audio.html">Audio Annotation</a></li>
+                <li><a href="service-3d.html">3D / LiDAR</a></li>
+                <li><a href="service-llm.html">LLM & GenAI</a></li>
+            </ul></div>
+            <div class="footer-col"><h5>Company</h5><ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul></div>
+            <div class="footer-col"><h5>Contact</h5><ul>
+                <li>hello@annotalabs.com</li>
+                <li>+1 (555) 000-0000</li>
+                <li>Remote · Worldwide</li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Annotalabs. All rights reserved.</span>
+            <span>Privacy Policy · Terms of Service</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
